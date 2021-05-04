@@ -5,6 +5,7 @@ option go_package = "github.com/roodrigoroot/go-service-micro";
 
 service Greeter {
 	rpc Hello(Request) returns (Response) {}
+	rpc GetUser(Request) returns (Response);
 }
 
 message Request {
